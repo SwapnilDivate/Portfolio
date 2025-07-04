@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swapnil Divate | Software Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg') center/cover no-repeat;
+      color: #ffffff;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .achievements,
+    .contact {
+      background: linear-gradient(to right, #f0f4ff, #e0ecff);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .about p {
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills li {
+      background-color: #e5e7eb;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .skills li:hover {
+      background-color: #c7d2fe;
+      transform: scale(1.03);
+    }
+
+    .skills li span {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #374151;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card img:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #111827;
+    }
+
+    .achievements-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .achievements-gallery div {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .achievements-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .achievements-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .achievements-gallery h4 {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #111827;
+    }
+
+    .achievements-gallery p {
+      font-size: 0.9rem;
+      color: #374151;
+      margin-top: 5px;
+    }
+
+    .contact p,
+    .contact a {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      display: block;
+      color: #1f2937;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #f3f4f6;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Swapnil Shankar Divate</h1>
+    <p>Software Developer | Web & Java Enthusiast | BE in AI & ML</p>
+  </header>
+
+  <main class="container">
+    <section class="about">
+      <h2 class="section-title">About Me</h2>
+      <p>I am a final-year engineering student specializing in Artificial Intelligence and Machine Learning. I am passionate about solving problems through technology, especially through web development and software engineering.</p>
+      <p>I bring experience in building full-stack web applications, creating intuitive user interfaces, and developing scalable backend logic. I'm also an NCC 'C' Certificate holder and IEEE member.</p>
+    </section>
+
+    <section class="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>Java & OOPs <span>Strong understanding of object-oriented programming.</span></li>
+        <li>HTML & CSS <span>Clean, semantic and accessible web design.</span></li>
+        <li>JavaScript <span>Dynamic interactivity and DOM manipulation.</span></li>
+        <li>React.js <span>Component-based UI development.</span></li>
+        <li>Git & GitHub <span>Version control and collaboration.</span></li>
+        <li>QGIS & Leaflet.js <span>Custom mapping and GIS integration.</span></li>
+        <li>Problem Solving <span>Logical thinking and coding practice.</span></li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="C:\Users\swapnil divate\Desktop\meee\tictac.png" alt="Tic Tac Toe">
+          <h3>Tic Tac Toe</h3>
+          <p>Classic web-based game built using HTML, CSS, and JavaScript.</p>
+          <p>Link :<a href="https://swapnildivate.github.io/Tic-Tac-Toe/">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <img src="C:\Users\swapnil divate\Desktop\meee\clone.png" alt="Amazon Clone">
+          <h3>Amazon Clone</h3>
+          <p>Static clone of the Amazon landing page using HTML & CSS, responsive design.</p>
+          <p>Link :<a href="https://swapnildivate.github.io/Amazon-Clone/">Click Here</a></p>
+        </div>
+        <div class="project-card">
+          <img src="C:\Users\swapnil divate\Desktop\meee\map.jpg" alt="Campus Navigation">
+          <h3>Campus Navigation</h3>
+          <p>Interactive 3D campus map using QGIS, Leaflet.js, and React to guide students within college premises.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-gallery">
+        <div>
+          <img src="C:\Users\swapnil divate\Desktop\meee\best achiver.jpg" alt="Best Achiever">
+          <h4>Best Achiever in Extracurricular Activities</h4>
+          <p>Received for outstanding performance in various college-level events.</p>
+        </div>
+        <div>
+          <img src="C:\Users\swapnil divate\Desktop\meee\Robot building.jpg" alt="Robot Building">
+          <h4>Builded a Smart Robot</h4>
+          <p>Hands on experience on building a robot.</p>
+        </div>
+        <div>
+          <img src="C:\Users\swapnil divate\Desktop\meee\ncc b.jpg" alt="NCC B Certificate">
+          <h4>NCC 'B' Certificate</h4>
+          <p>Completed 2 years of National Cadet Corps training with discipline and leadership.</p>
+        </div>
+        <div>
+          <img src="C:\Users\swapnil divate\Desktop\meee\mscit.jpg" alt="MSCIT">
+          <h4>MS-CIT completion certificate</h4>
+          <p>Done a training for 3 months and hands on experience of MS Word and MS Excel.</p>
+        </div>
+        <div>
+          <img src="C:\Users\swapnil divate\Desktop\meee\Khelo vvce.jpg" alt="Khelo-VVCE">
+          <h4>Runner up in khelo VVCE</h4>
+          <p>Secured a 2nd place in cricket competation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:swapnildivate1650@gmail.com">swapnildivate1650@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/swapnil-divate-185271262/">linkedin.com/in/swapnil</a></p>
+      <p>GitHub: <a href="https://github.com/SwapnilDivate">github.com/swapnil</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Swapnil Divate. All rights reserved.
+  </footer>
+</body>
+
+</html>
